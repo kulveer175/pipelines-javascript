@@ -19,7 +19,6 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
  - script: npm test
-
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
