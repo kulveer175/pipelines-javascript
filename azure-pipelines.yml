@@ -11,8 +11,6 @@ pool:
 
 steps:
 - task: Maven@3
-- script: npm test
-
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
